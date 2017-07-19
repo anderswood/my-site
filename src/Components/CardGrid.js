@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Card } from './Card.js';
-import { cardContentArr } from './cardContent.js';
+import { cardContentArr } from '../cardContent.js';
 
 
 export const CardGrid = () => {

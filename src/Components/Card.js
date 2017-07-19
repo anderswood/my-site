@@ -1,19 +1,17 @@
 import React from 'react';
-
+import IconImageRound from './Icons/ImageRound'
 
 export const Card = ( {cardInfo, indexNum} ) => {
 
   if(cardInfo.cardType === 'img-card') {
     return (
       <div className={`card card${indexNum} ${cardInfo.cardType}`}>
-        {/* <div>IMG PLACEHOLDER</div> */}
         <div className={`card${indexNum}-hover card-hover`}>
-
-
-
+          <label>
+            <IconImageRound />
+          </label>
         </div>
       </div>
-
     )
   } else
   if (cardInfo.cardType === 'content-card') {
