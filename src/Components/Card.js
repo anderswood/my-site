@@ -1,5 +1,10 @@
 import React from 'react';
-import IconImageRound from './Icons/ImageRound'
+// import IconImageRound from './Icons/ImageRound';
+// import IconGithubRound from './Icons/GithubRound';
+import IconTap from './Icons/TapRound';
+import IconGithub from './Icons/Github';
+import IconImage from './Icons/Image';
+import '../styles/card.css';
 
 export const Card = ( {cardInfo, indexNum} ) => {
 
@@ -7,9 +12,23 @@ export const Card = ( {cardInfo, indexNum} ) => {
     return (
       <div className={`card card${indexNum} ${cardInfo.cardType}`}>
         <div className={`card${indexNum}-hover card-hover`}>
-          <label>
-            <IconImageRound />
-          </label>
+          <div className='card-icon-container'>
+            <label>
+              <a>
+                <IconImage />
+              </a>
+            </label>
+            <label>
+              <a href={ cardInfo.liveLink } target="_blank">
+                <IconTap />
+              </a>
+            </label>
+            <label>
+              <a href={ cardInfo.githubLink } target="_blank">
+                <IconGithub />
+              </a>
+            </label>
+          </div>
         </div>
       </div>
     )
