@@ -17,6 +17,22 @@ body {
   flex-flow: row wrap;
 }
 
+.header-icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.header-link svg {
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+
 /*.logo {
   background-image: url('./icons/image-round.svg')
 }*/

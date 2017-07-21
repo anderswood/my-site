@@ -14,17 +14,17 @@ export const Card = ( {cardInfo, indexNum} ) => {
         <div className={`card${indexNum}-hover card-hover`}>
           <div className='card-icon-container'>
             <label>
-              <a>
+              <a className='card-link'>
                 <IconImage />
               </a>
             </label>
             <label>
-              <a href={ cardInfo.liveLink } target="_blank">
+              <a className='card-link' href={ cardInfo.liveLink } target="_blank">
                 <IconTap />
               </a>
             </label>
             <label>
-              <a href={ cardInfo.githubLink } target="_blank">
+              <a className='card-link' href={ cardInfo.githubLink } target="_blank">
                 <IconGithub />
               </a>
             </label>
