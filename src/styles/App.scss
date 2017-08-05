@@ -1,0 +1,104 @@
+@import './card.scss';
+@import './variables';
+
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #FFF;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px #FFF;
+}
+
+body, html {
+ margin: 0;
+}
+
+.titles-container {
+  margin-left: 20px;
+  position: absolute;
+  top: 25vh;
+}
+
+.header-container {
+  background: url('../images/sopris-summit-small.jpg') no-repeat fixed;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-position: top;
+  position:
+}
+
+#card-grid-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header-icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.header-link svg {
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+
+/*.logo {
+  background-image: url('./icons/image-round.svg')
+}*/
+
+
+
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+/*header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  background: #000;
+}
+
+#header-title, #header-sub-title1 {
+  color: #FFF;
+}*/
