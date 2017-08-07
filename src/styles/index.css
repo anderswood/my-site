@@ -40,22 +40,26 @@ body, html {
   right: 30px;
   top: 30px; }
 
-.header-link svg {
-  margin: 10px;
-  width: 75px;
-  height: 75px; }
+.header-label {
+  margin: 10px; }
 
-/*header {
+.header-link svg, .header-link {
+  font-size: 0; }
+
+.link-aboutMe {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-  background: #000;
-}
+  background-color: #000;
+  text-decoration: none; }
 
-#header-title, #header-sub-title1 {
-  color: #FFF;
-}*/
+.text-about, .text-me {
+  color: rgba(100, 100, 100, 0.9);
+  font-size: 25px;
+  margin: 0; }
+
 .card {
   display: flex;
   align-items: center;
@@ -104,3 +108,18 @@ body, html {
 .card-link svg {
   width: 75px;
   height: 75px; }
+
+.aboutMe-container {
+  background: url("../images/trees1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 25px 0; }
+
+.aboutMe-content {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); }

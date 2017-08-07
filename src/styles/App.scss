@@ -49,21 +49,26 @@ body, html {
   top: 30px;
 }
 
-.header-link svg {
+.header-label {
   margin: 10px;
-  width: 75px;
-  height: 75px;
 }
 
+.header-link svg, .header-link {
+  font-size: 0;
+}
 
-/*header {
+.link-aboutMe {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-  background: #000;
+  background-color: #000;
+  text-decoration: none;
 }
 
-#header-title, #header-sub-title1 {
-  color: #FFF;
-}*/
+.text-about, .text-me {
+  color: rgba(100,100,100,0.9);
+  font-size: 25px;
+  margin: 0;
+}

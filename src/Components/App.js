@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import '../styles/App.css';
+import { Link, Route } from 'react-router-dom'
 
 import { CardGrid } from './CardGrid';
+import { AboutMe } from './AboutMe';
 import LinkedIn from './Icons/LinkedIn';
 import Twitter from './Icons/Twitter';
 import Github from './Icons/Github';
@@ -25,25 +25,32 @@ class App extends Component {
           </section>
 
           <section className='header-icons-container'>
-            <label>
+            <label className='header-label label-linkedIn'>
               <a className='header-link' href='www.linkedin.com' target="_blank">
                 <LinkedIn />
               </a>
             </label>
-            <label>
+            <label className='header-label label-github'>
               <a className='header-link' href='www.github.com' target="_blank">
                 <Github />
               </a>
             </label>
-            <label>
+            <label className='header-label label-twitter'>
               <a className='header-link' href='www.twitter.com' target="_blank">
                 <Twitter />
               </a>
             </label>
+            <label className='header-label label-aboutMe'>
+              <Link to={ '/AboutMe' } className='header-link link-aboutMe'>
+                <h2 className='text-about'>about</h2>
+                <h2 className='text-me'>me</h2>
+              </Link>
+            </label>
           </section>
 
         </div>
-          <CardGrid />
+          <Route path={ '/home' } render={ () => <CardGrid /> }/>
+          <Route path={ '/AboutMe' } render={ () => <AboutMe /> }/>
       </div>
     );
   }
