@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return(
     <section className='aboutMe-container'>
       <div className='aboutMe-content'>
-        <img src='../images/profile-pic_20170420-min.jpg' alt='profile'/>
+        <img src='../images/prof-pic.jpg' alt='anders wood'/>
         <h2>Anders Wood</h2>
         <h4>anderswood at gmail dot com</h4>
 
