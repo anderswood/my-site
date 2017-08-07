@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import '../styles/App.css';
+// import '../styles/App.css';
 
 import { CardGrid } from './CardGrid';
 import LinkedIn from './Icons/LinkedIn';
