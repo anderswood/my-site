@@ -10,8 +10,8 @@ export const Header = () => {
     <section className='header-container'>
 
       <div className='header-left-div'>
-        <h2>Anders Wood</h2>
-        <h3>Front-End Developer</h3>
+        <h2 className='header-name'>Anders Wood</h2>
+        <h3 className='header-title'>Front-End Developer</h3>
       </div>
 
       <div className='header-right-div'>

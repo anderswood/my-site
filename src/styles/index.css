@@ -3,22 +3,27 @@ body, html {
 
 h1 {
   font-family: "Fira Sans";
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 600;
-  text-shadow: 0 0 6px #FFF; }
+  margin-top: 20px;
+  margin-bottom: 0; }
 
 h3 {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 300;
-  text-shadow: 0 0 6px #FFF; }
+  margin: 6px auto; }
 
 body, html {
   margin: 0; }
 
 .titles-container {
-  margin-left: 20px;
+  margin-left: 12%;
+  margin-top: 6%;
   position: absolute;
-  top: 5vh; }
+  text-align: right; }
+
+#sub-title1 {
+  margin-top: 0; }
 
 .hero-container {
   background: url("../images/sopris-summit-small.jpg") no-repeat fixed;
@@ -47,20 +52,36 @@ body, html {
   margin: 0; }
 
 .header-container {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   top: 0;
-  position: relative;
-  z-index: 1; }
+  padding: 8px 15px; }
 
 .header-container-fixed {
   position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
+  width: 100%;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.95); }
+  .header-container-fixed .header-name {
+    color: #FFF; }
+  .header-container-fixed .header-title {
+    color: #FFF; }
+  .header-container-fixed .header-label svg {
+    fill: #FFF; }
+
+.header-right-div, .header-left-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.header-name {
+  font-family: "Fira Sans";
+  font-weight: 600; }
 
 .header-label {
-  margin: 10px; }
+  margin: 10px;
+  font-size: 0; }
 
 .header-link svg, .header-link {
   font-size: 0; }
