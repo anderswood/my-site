@@ -47,21 +47,23 @@ body, html {
   margin: 0; }
 
 .header-container {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  top: 0;
   position: relative;
-  top: 0; }
+  z-index: 1; }
+
+.header-container-fixed {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
 
 .header-label {
   margin: 10px; }
 
 .header-link svg, .header-link {
   font-size: 0; }
-
-.fixed-header {
-  position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
 
 .card {
   display: flex;

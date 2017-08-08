@@ -20,15 +20,15 @@ class App extends Component {
     const heroElem = document.querySelector('.hero-container');
     const topOfHeader = headerElem.offsetTop;
     const heightOfHeader = headerElem.offsetHeight;
-    console.log(heightOfHeader);
-    if (window.scrollY >= topOfHeader) {
+    // console.log(window.innerHeight);
+    if (window.scrollY >= window.innerHeight) {
       heroElem.style.paddingTop = heightOfHeader + 'px';
-      headerElem.classList.add('fixed-header');
+      headerElem.classList.add('header-container-fixed');
     } else {
-      headerElem.classList.remove('fixed-header');
+      headerElem.classList.remove('header-container-fixed');
       heroElem.style.paddingTop = 0;
     }
-    console.log(topOfHeader, window.scrollY);
+    console.log('header top: ', topOfHeader, 'Yscroll: ', window.scrollY);
   }
 
   render() {
