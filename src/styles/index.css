@@ -18,11 +18,11 @@ body, html {
 .titles-container {
   margin-left: 20px;
   position: absolute;
-  top: 25vh; }
+  top: 5vh; }
 
-.header-container {
+.hero-container {
   background: url("../images/sopris-summit-small.jpg") no-repeat fixed;
-  background-size: 100%;
+  background-size: cover;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -31,20 +31,6 @@ body, html {
 #card-grid-container {
   display: flex;
   flex-flow: row wrap; }
-
-.header-icons-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  right: 30px;
-  top: 30px; }
-
-.header-label {
-  margin: 10px; }
-
-.header-link svg, .header-link {
-  font-size: 0; }
 
 .link-aboutMe {
   display: flex;
@@ -59,6 +45,21 @@ body, html {
   color: rgba(100, 100, 100, 0.9);
   font-size: 25px;
   margin: 0; }
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.header-label {
+  margin: 10px; }
+
+.header-link svg, .header-link {
+  font-size: 0; }
+
+.fixed-header {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1); }
 
 .card {
   display: flex;

@@ -1,0 +1,23 @@
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // position: relative;
+  // top: 0;
+  // z-index: 1;
+}
+
+.header-label {
+  margin: 10px;
+}
+
+.header-link svg, .header-link {
+  font-size: 0;
+}
+
+.fixed-header {
+  position: fixed;
+  // top: 0;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
