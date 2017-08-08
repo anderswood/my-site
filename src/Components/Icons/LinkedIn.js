@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <svg className='icon' width='35px' height='35px' x="0px" y="0px" viewBox="0 0 455 455">
+  <svg className='icon' width='35px' height='35px' viewBox="0 0 455 455">
   	<path d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
   	<path d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
   		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
