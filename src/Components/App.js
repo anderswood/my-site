@@ -11,9 +11,9 @@ class App extends Component {
     window.addEventListener('scroll', this.fixNav);
   }
 
-  componentWillUnmount () {
-    window.removeEventListener('scroll', this.fixNav);
-  }
+  // componentWillUnmount () {
+  //   window.removeEventListener('scroll', this.fixNav);
+  // }
 
   fixNav () {
     const headerElem = document.querySelector('.header-container');
