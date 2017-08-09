@@ -122,6 +122,11 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.card7 {
+  background: url("../images/madtalk/madtalk2.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .card0-hover {
   background: rgba(189, 102, 21, 0.68); }
 
@@ -139,6 +144,12 @@ body, html {
 
 .card5 {
   background: #e3dc2e; }
+
+.card6 {
+  background: #e20203; }
+
+.card7-hover {
+  background: rgba(226, 2, 3, 0.68); }
 
 .img-card:hover > .card-hover {
   display: flex;

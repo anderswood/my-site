@@ -44,11 +44,28 @@ const movieTrackerImg = {
   githubLink: 'https://github.com/anderswood/movie-tracker'
 }
 
+const madTalkContent = {
+  cardType: 'content-card',
+  class: 'madtalk-content',
+  title: 'MadTalk',
+  text: 'Fire in the hole smartly. o-ho-ho me pressgang long boat American Main spirits skysail crimp ye scuttle. Jack Jack Ketch topgallant spanker coxswain aye '
+}
+
+const madTalkImg = {
+  cardType: 'img-card',
+  class: 'madtalk-img',
+  liveLink: 'https://madtalk.herokuapp.com/',
+  images: [],
+  githubLink: 'https://github.com/lauraturk/MadTalk'
+}
+
 export const cardContentArr = [
   stashTrackerImg,
   stashTrackerContent,
   weatherlyContent,
   weatherlyImg,
   movieTrackerImg,
-  movieTrackerContent
+  movieTrackerContent,
+  madTalkContent,
+  madTalkImg
  ];

@@ -7,6 +7,7 @@ import { cardContentArr } from '../cardContent.js';
 export const CardGrid = () => {
   if (!cardContentArr.length) { return <div></div>; }
 
+console.log(cardContentArr);
 const cardGridArr = cardContentArr.map( (cardObj, i) => {
   return <Card  indexNum={ i }
                 cardInfo={ cardObj }

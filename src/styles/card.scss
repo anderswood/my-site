@@ -42,12 +42,20 @@
   background-repeat: no-repeat;
 }
 
+.card7 {
+  background: url('../images/madtalk/madtalk2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card0-hover { background: rgba(189, 102, 21, 0.68); }
 .card1 { background: #bd6615; }
 .card2 { background: #65ade2; }
 .card3-hover { background: rgba(101, 173, 226, 0.68); }
 .card4-hover { background: rgba(227, 220, 46, 0.68); }
 .card5 { background: #e3dc2e; }
+.card6 { background: rgba(226, 2, 3, 1); }
+.card7-hover { background: rgba(226, 2, 3, 0.68); }
 
 
 .img-card:hover > .card-hover {
