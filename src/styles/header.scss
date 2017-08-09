@@ -9,6 +9,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 8px 15px;
+  z-index: 1;
 }
 
 .header-left-div {
@@ -26,6 +27,12 @@
   }
   .header-label svg {
     fill: #FFF;
+  }
+  .text-me {
+    color: #000;
+  }
+  .link-aboutMe  {
+    background: #FFF;
   }
 }
 
@@ -59,4 +66,28 @@
 
 .header-link svg, .header-link {
   font-size: 0;
+}
+
+.header-link svg, .link-aboutMe {
+  width: 45px;
+  height: 45px;
+}
+
+.link-aboutMe {
+
+}
+
+.link-aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-decoration: none;
+}
+
+.text-about, .text-me {
+  font-size: 25px;
+  margin: 0;
+  // letter-spacing: -3px;
+  color: rgba(255, 255, 255, 0.9);
 }

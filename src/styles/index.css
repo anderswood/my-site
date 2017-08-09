@@ -30,27 +30,12 @@ body, html {
   background-size: cover;
   margin: 0;
   padding: 0;
-  height: calc(100vh + 50px);
   background-position: top;
   position: relative; }
 
 #card-grid-container {
   display: flex;
   flex-flow: row wrap; }
-
-.link-aboutMe {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  text-decoration: none; }
-
-.text-about, .text-me {
-  color: rgba(100, 100, 100, 0.9);
-  font-size: 25px;
-  margin: 0; }
 
 .header-container {
   display: flex;
@@ -60,7 +45,8 @@ body, html {
   bottom: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 8px 15px; }
+  padding: 8px 15px;
+  z-index: 1; }
 
 .header-left-div {
   visibility: hidden; }
@@ -75,6 +61,10 @@ body, html {
     visibility: visible; }
   .header-container-fixed .header-label svg {
     fill: #FFF; }
+  .header-container-fixed .text-me {
+    color: #000; }
+  .header-container-fixed .link-aboutMe {
+    background: #FFF; }
 
 .header-right-div {
   display: flex;
@@ -101,6 +91,22 @@ body, html {
 
 .header-link svg, .header-link {
   font-size: 0; }
+
+.header-link svg, .link-aboutMe {
+  width: 45px;
+  height: 45px; }
+
+.link-aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-decoration: none; }
+
+.text-about, .text-me {
+  font-size: 25px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9); }
 
 .card {
   display: flex;

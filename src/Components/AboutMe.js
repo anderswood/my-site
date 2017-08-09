@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const AboutMe = () => {
+
   return(
     <section className='aboutMe-container'>
       <div className='aboutMe-content'>

@@ -5,9 +5,14 @@ import LinkedIn from './Icons/LinkedIn';
 import Twitter from './Icons/Twitter';
 import Github from './Icons/Github';
 
-export const Header = () => {
+export const Header = (props) => {
+
+  let containerClass = props.headerStatus
+    ? 'header-container header-container-fixed'
+    : 'header-container';
+
   return(
-    <section className='header-container'>
+    <section className={ containerClass }>
 
       <div className='header-left-div'>
         <h2 className='header-name'>Anders Wood</h2>
@@ -32,8 +37,8 @@ export const Header = () => {
         </label>
         <label className='header-label label-aboutMe'>
           <Link to={ '/AboutMe' } className='header-link link-aboutMe'>
-            <h2 className='text-about'>about</h2>
-            <h2 className='text-me'>me</h2>
+            {/* <h2 className='text-about'>about</h2> */}
+            <h3 className='text-me'>me</h3>
           </Link>
         </label>
       </div>

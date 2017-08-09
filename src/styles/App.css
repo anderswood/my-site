@@ -30,24 +30,9 @@ body, html {
   background-size: cover;
   margin: 0;
   padding: 0;
-  height: calc(100vh + 50px);
   background-position: top;
   position: relative; }
 
 #card-grid-container {
   display: flex;
   flex-flow: row wrap; }
-
-.link-aboutMe {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  text-decoration: none; }
-
-.text-about, .text-me {
-  color: rgba(100, 100, 100, 0.9);
-  font-size: 25px;
-  margin: 0; }
