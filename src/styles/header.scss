@@ -8,7 +8,7 @@
   bottom: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 8px 15px;
+  padding: 0 15px;
   z-index: 1;
 }
 
@@ -19,7 +19,7 @@
 .header-container-fixed {
   position: fixed;
   // box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   bottom: unset;
   top: 0;
   .header-left-div {
@@ -52,9 +52,12 @@
   font-family: $font-header;
   font-weight: $weight-header;
   color: #FFF;
+  margin: 0;
+  // font-size: 25px;
 }
 
 .header-title {
+  margin-left: 3px;
   color: #FFF;
 }
 
@@ -105,4 +108,5 @@
 
 .header-left-div:hover .header-name, .header-left-div:hover .header-title {
   color: $primary-orange;
+  text-shadow: 0 0 8px $primary-orange;
 }

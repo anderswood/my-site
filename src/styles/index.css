@@ -17,8 +17,8 @@ body, html {
   margin: 0; }
 
 .titles-container {
-  margin-left: 12%;
-  margin-top: 6%;
+  margin-left: 11%;
+  margin-top: 5%;
   position: absolute;
   text-align: right; }
 
@@ -45,7 +45,7 @@ body, html {
   bottom: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 8px 15px;
+  padding: 0 15px;
   z-index: 1; }
 
 .header-left-div {
@@ -53,7 +53,7 @@ body, html {
 
 .header-container-fixed {
   position: fixed;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   bottom: unset;
   top: 0; }
   .header-container-fixed .header-left-div {
@@ -78,9 +78,11 @@ body, html {
 .header-name {
   font-family: "Fira Sans";
   font-weight: 600;
-  color: #FFF; }
+  color: #FFF;
+  margin: 0; }
 
 .header-title {
+  margin-left: 3px;
   color: #FFF; }
 
 .header-label {
@@ -119,7 +121,8 @@ body, html {
   text-decoration: none; }
 
 .header-left-div:hover .header-name, .header-left-div:hover .header-title {
-  color: #bd6615; }
+  color: #bd6615;
+  text-shadow: 0 0 8px #bd6615; }
 
 .card {
   display: flex;
