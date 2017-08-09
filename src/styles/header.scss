@@ -4,29 +4,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
   padding: 8px 15px;
-  // position: relative;
-  // z-index: 1;
+}
+
+.header-left-div {
+  visibility: hidden;
 }
 
 .header-container-fixed {
   position: fixed;
-  width: 100%;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.95);
-  .header-name {
-    color: #FFF;
-  }
-  .header-title {
-    color: #FFF;
+  bottom: unset;
+  top: 0;
+  .header-left-div {
+    visibility: visible;
   }
   .header-label svg {
     fill: #FFF;
   }
 }
 
-.header-right-div, .header-left-div {
+.header-right-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,11 +44,17 @@
 .header-name {
   font-family: $font-header;
   font-weight: $weight-header;
+  color: #FFF;
+}
+
+.header-title {
+  color: #FFF;
 }
 
 .header-label {
   margin: 10px;
   font-size: 0;
+  color: #FFF;
 }
 
 .header-link svg, .header-link {

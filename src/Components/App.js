@@ -41,8 +41,8 @@ class App extends Component {
             <h3 id='sub-title3' className='sub-title'>Adventurer</h3>
           </section>
 
+          <Header />
         </div>
-        <Header />
         <Route path={ '/' } render={ () => <CardGrid /> }/>
         <Route path={ '/AboutMe' } render={ () => <AboutMe /> }/>
       </div>

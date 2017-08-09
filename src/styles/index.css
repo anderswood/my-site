@@ -30,8 +30,9 @@ body, html {
   background-size: cover;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-position: top; }
+  height: calc(100vh + 50px);
+  background-position: top;
+  position: relative; }
 
 #card-grid-container {
   display: flex;
@@ -55,33 +56,48 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
   padding: 8px 15px; }
+
+.header-left-div {
+  visibility: hidden; }
 
 .header-container-fixed {
   position: fixed;
-  width: 100%;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.95); }
-  .header-container-fixed .header-name {
-    color: #FFF; }
-  .header-container-fixed .header-title {
-    color: #FFF; }
+  background: rgba(0, 0, 0, 0.95);
+  bottom: unset;
+  top: 0; }
+  .header-container-fixed .header-left-div {
+    visibility: visible; }
   .header-container-fixed .header-label svg {
     fill: #FFF; }
 
-.header-right-div, .header-left-div {
+.header-right-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
 .header-name {
   font-family: "Fira Sans";
-  font-weight: 600; }
+  font-weight: 600;
+  color: #FFF; }
+
+.header-title {
+  color: #FFF; }
 
 .header-label {
   margin: 10px;
-  font-size: 0; }
+  font-size: 0;
+  color: #FFF; }
 
 .header-link svg, .header-link {
   font-size: 0; }

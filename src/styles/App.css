@@ -30,8 +30,9 @@ body, html {
   background-size: cover;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-position: top; }
+  height: calc(100vh + 50px);
+  background-position: top;
+  position: relative; }
 
 #card-grid-container {
   display: flex;
