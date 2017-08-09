@@ -1,22 +1,19 @@
 import React from 'react';
 
 import { Card } from './Card.js';
-import { cardContentArr } from '../cardContent.js';
-
+import { cardContentArr } from '../helpers/cardContent';
 
 export const CardGrid = () => {
   if (!cardContentArr.length) { return <div></div>; }
 
-console.log(cardContentArr);
-const cardGridArr = cardContentArr.map( (cardObj, i) => {
-  return <Card  indexNum={ i }
-                cardInfo={ cardObj }
-                key={ i }
-          />
-})
+  const cardGridArr = cardContentArr.map( (cardObj, i) => {
+    return <Card  indexNum={ i }
+                  cardInfo={ cardObj }
+                  key={ i }/>
+  })
 
-return (
-  <section id='card-grid-container'>{ cardGridArr }</section>
-)
+  return (
+    <section id='card-grid-container'>{ cardGridArr }</section>
+  )
 
 }

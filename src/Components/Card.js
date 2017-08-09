@@ -8,7 +8,6 @@ import '../styles/card.css';
 
 export const Card = ( {cardInfo, indexNum} ) => {
 
-  console.log(cardInfo.class);
 
   if(cardInfo.cardType === 'img-card') {
     return (

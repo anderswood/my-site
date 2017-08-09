@@ -11,16 +11,15 @@ class App extends Component {
     window.addEventListener('scroll', this.fixNav);
   }
 
-  // componentWillUnmount () {
-  //   window.removeEventListener('scroll', this.fixNav);
-  // }
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.fixNav);
+  }
 
   fixNav () {
     const headerElem = document.querySelector('.header-container');
     const heroElem = document.querySelector('.hero-container');
-    const topOfHeader = headerElem.offsetTop;
     const heightOfHeader = headerElem.offsetHeight;
-    // console.log(window.innerHeight);
+
     if (window.scrollY >= window.innerHeight) {
       heroElem.style.paddingTop = heightOfHeader + 'px';
       headerElem.classList.add('header-container-fixed');
@@ -28,7 +27,6 @@ class App extends Component {
       headerElem.classList.remove('header-container-fixed');
       heroElem.style.paddingTop = 0;
     }
-    console.log('header top: ', topOfHeader, 'Yscroll: ', window.scrollY);
   }
 
   render() {
