@@ -20,16 +20,12 @@ class LandingPage extends Component {
   }
 
   fixNav () {
-    const heroElem = document.querySelector('.hero-container');
     const headerElem = document.querySelector('.header-container');
-    const heightOfHeader = headerElem.offsetHeight;
 
     if (window.scrollY >= window.innerHeight) {
       headerElem.classList.add('header-container-fixed');
-      heroElem.style.paddingTop = heightOfHeader + 'px';
     } else {
       headerElem.classList.remove('header-container-fixed');
-      heroElem.style.paddingTop = 0;
     }
   }
 

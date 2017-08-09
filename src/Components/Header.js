@@ -14,10 +14,12 @@ export const Header = (props) => {
   return(
     <section className={ containerClass }>
 
-      <div className='header-left-div'>
-        <h2 className='header-name'>Anders Wood</h2>
-        <h3 className='header-title'>Front-End Developer</h3>
-      </div>
+      {/* <div className='header-left-div'> */}
+        <Link to='/' className='header-left-div link-home'>
+          <h2 className='header-name'>Anders Wood</h2>
+          <h3 className='header-title'>Front-End Developer</h3>
+        </Link>
+      {/* </div> */}
 
       <div className='header-right-div'>
         <label className='header-label label-linkedIn'>
@@ -36,7 +38,7 @@ export const Header = (props) => {
           </a>
         </label>
         <label className='header-label label-aboutMe'>
-          <Link to={ '/AboutMe' } className='header-link link-aboutMe'>
+          <Link to='/AboutMe' className='header-link link-aboutMe'>
             {/* <h2 className='text-about'>about</h2> */}
             <h3 className='text-me'>me</h3>
           </Link>

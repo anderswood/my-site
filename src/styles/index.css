@@ -53,7 +53,6 @@ body, html {
 
 .header-container-fixed {
   position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.95);
   bottom: unset;
   top: 0; }
@@ -96,6 +95,14 @@ body, html {
   width: 45px;
   height: 45px; }
 
+.header-link:hover svg {
+  fill: #bd6615;
+  box-shadow: 0 0 8px rgba(189, 102, 21, 0.8); }
+
+.link-aboutMe:hover {
+  background: #bd6615;
+  box-shadow: 0 0 8px rgba(189, 102, 21, 0.8); }
+
 .link-aboutMe {
   display: flex;
   justify-content: center;
@@ -103,10 +110,16 @@ body, html {
   background-color: #000;
   text-decoration: none; }
 
-.text-about, .text-me {
+.text-me {
   font-size: 25px;
   margin: 0;
   color: rgba(255, 255, 255, 0.9); }
+
+.link-home {
+  text-decoration: none; }
+
+.header-left-div:hover .header-name, .header-left-div:hover .header-title {
+  color: #bd6615; }
 
 .card {
   display: flex;
@@ -233,7 +246,7 @@ body, html {
 
 .aboutMe-content {
   width: 95%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9); }

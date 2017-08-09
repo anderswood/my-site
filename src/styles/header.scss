@@ -18,7 +18,7 @@
 
 .header-container-fixed {
   position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 5px rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.95);
   bottom: unset;
   top: 0;
@@ -73,7 +73,14 @@
   height: 45px;
 }
 
-.link-aboutMe {
+.header-link:hover svg {
+  fill: $primary-orange;
+  box-shadow: 0 0 8px rgba(189, 102, 21, 0.8);
+}
+
+.link-aboutMe:hover {
+  background: $primary-orange;
+  box-shadow: 0 0 8px rgba(189, 102, 21, 0.8);
 
 }
 
@@ -85,9 +92,17 @@
   text-decoration: none;
 }
 
-.text-about, .text-me {
+.text-me {
   font-size: 25px;
   margin: 0;
   // letter-spacing: -3px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.link-home {
+  text-decoration: none;
+}
+
+.header-left-div:hover .header-name, .header-left-div:hover .header-title {
+  color: $primary-orange;
 }
