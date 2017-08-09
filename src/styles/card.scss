@@ -1,13 +1,20 @@
+
 .card {
   display: flex;
   align-items: center;
-  flex: 0 1 50%;
   box-sizing: border-box;
-  min-height: 300px;
+  flex: 0 1 50%;
+  height: auto;
+}
+
+.card:before {
+  content:'';
+  float: left;
+  padding-top: 100%;
 }
 
 .content-card {
-  padding-left: 25px;
+  padding: 25px;
 }
 
 .card-hover {
@@ -18,15 +25,30 @@
 }
 
 .card0 {
-  background: url('../images/stash-tracker/stash-tracker-screenshot.png') no-repeat;
-  background-size: 100%;
+  background: url('../images/stash-tracker/stash-tracker-screenshot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background: url('../images/weatherly/weatherly1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background: url('../images/movie-tracker/movie-tracker-screenshot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card0-hover { background: rgba(189, 102, 21, 0.68); }
 .card1 { background: #bd6615; }
 .card2 { background: #65ade2; }
 .card3-hover { background: rgba(101, 173, 226, 0.68); }
+.card4-hover { background: rgba(227, 220, 46, 0.68); }
 .card5 { background: #e3dc2e; }
+
 
 .img-card:hover > .card-hover {
   display: flex;
@@ -43,4 +65,20 @@
 .card-link svg {
   width: 75px;
   height: 75px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .card {
+    flex: 0 1 33.33%;
+  }
+
+  .card0 { order: 0 };
+  .card1 { order: 1 };
+  .card2 { order: 5 };
+  .card3 { order: 2 };
+  .card4 { order: 4 };
+  .card5 { order: 3 };
+
+
 }
