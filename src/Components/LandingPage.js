@@ -34,7 +34,7 @@ class LandingPage extends Component {
       <div className='hero-container'>
 
         <section className='titles-container'>
-          <h1 id='title'>Anders Wood</h1>
+          <h1 id='title'>ANDERS WOOD</h1>
           <h3 id='sub-title1' className='sub-title'>Front-End Developer</h3>
           <h3 id='sub-title2' className='sub-title'>Mech. Engineer</h3>
           <h3 id='sub-title3' className='sub-title'>Adventurer</h3>
