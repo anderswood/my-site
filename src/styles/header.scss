@@ -75,9 +75,19 @@
   height: 45px;
 }
 
-.header-link:hover svg {
-  fill: $primary-orange;
-  box-shadow: 0 0 8px rgba(189, 102, 21, 0.8);
+.label-github:hover svg {
+  fill: rgb(64, 120, 192);
+  box-shadow: 0 0 8px rgba(64, 120, 192, 0.8);
+}
+
+.label-linkedIn:hover svg {
+  fill: rgb(17, 120, 179);
+  box-shadow: 0 0 8px rgba(17, 120, 179, 0.8);
+}
+
+.label-twitter:hover svg {
+  fill: rgb(42, 163, 239);
+  box-shadow: 0 0 8px rgba(42, 163, 239, 0.8);
 }
 
 .link-aboutMe:hover {
