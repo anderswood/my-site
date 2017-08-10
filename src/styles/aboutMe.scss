@@ -17,15 +17,23 @@
 
 .aboutMe-div {
   background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 45px 20px;
+  // margin-top: 25px;
+  // margin-bottom: 25px;
 }
 
 .aboutMe-header {
   text-align: center;
   margin: 10px;
 }
+
+.aboutMe-underline {
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(189, 102, 21, .4);
+  width: 30%;
+  margin: 0 auto 15px auto;
+}
+
 
 .aboutMe-summary-container {
   text-align: center;
@@ -46,7 +54,7 @@
     }
   }
   .aboutMe-summary {
-    margin: 10px 0 0 0;
+    margin: 10px 25px 0 25px;
     text-align: left;
   }
 }

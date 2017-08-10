@@ -31,6 +31,7 @@ class AboutMe extends Component {
 
           <div className='aboutMe-div aboutMe-projects-container'>
             <h1 className='aboutMe-header'>PROJECTS</h1>
+            <div className='aboutMe-underline'></div>
             <Link to='/' className='aboutMe-linkHome'>
               <h4>Click Here</h4>
             </Link>
@@ -38,6 +39,7 @@ class AboutMe extends Component {
 
           <div className='aboutMe-div aboutMe-education-container'>
             <h1 className='aboutMe-header'>EDUCATION</h1>
+            <div className='aboutMe-underline'></div>
             <div className='education-div'>
               <h4>Turing School of Software & Design</h4>
               <h5>Front-End Development</h5>
@@ -58,6 +60,7 @@ class AboutMe extends Component {
 
           <div className='aboutMe-div aboutMe-progskills-container'>
             <h1 className='aboutMe-header'>PROGRAMMING SKILLS</h1>
+            <div className='aboutMe-underline'></div>
             <div className='aboutMe-progskills'>
               <h4>JavaScript</h4>
               <h4>CSS3/SCSS</h4>
@@ -81,6 +84,7 @@ class AboutMe extends Component {
 
           <div className='aboutMe-div aboutMe-lifeskills-container'>
             <h1 className='aboutMe-header'>LIFE SKILLS</h1>
+            <div className='aboutMe-underline'></div>
             <div className='aboutMe-wrapper'>
               <div className='aboutMe-lifeskills-left'>
                 <h3>Skiing</h3>
@@ -100,6 +104,7 @@ class AboutMe extends Component {
 
           <div className='aboutMe-div aboutMe-contact-container'>
             <h1 className='aboutMe-header'>CONTACT ME</h1>
+            <div className='aboutMe-underline'></div>
             <h4>anderswood at gmail dot com</h4>
           </div>
         </div>
