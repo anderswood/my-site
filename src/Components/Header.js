@@ -23,17 +23,17 @@ export const Header = (props) => {
 
       <div className='header-right-div'>
         <label className='header-label label-linkedIn'>
-          <a className='header-link' href='www.linkedin.com' target="_blank">
+          <a className='header-link' href='https://www.linkedin.com/in/anderswood/' target='_blank' rel='noopener noreferrer'>
             <LinkedIn />
           </a>
         </label>
         <label className='header-label label-github'>
-          <a className='header-link' href='www.github.com' target="_blank">
+          <a className='header-link' href='https://github.com/anderswood' target='_blank' rel='noopener noreferrer'>
             <Github />
           </a>
         </label>
         <label className='header-label label-twitter'>
-          <a className='header-link' href='www.twitter.com' target="_blank">
+          <a className='header-link' href='https://twitter.com/AndersWood' target='_blank' rel='noopener noreferrer'>
             <Twitter />
           </a>
         </label>

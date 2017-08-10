@@ -1,6 +1,4 @@
 import React from 'react';
-// import IconImageRound from './Icons/ImageRound';
-// import IconGithubRound from './Icons/GithubRound';
 import IconTap from './Icons/TapRound';
 import IconGithub from './Icons/Github';
 // import IconImage from './Icons/Image';
@@ -20,12 +18,12 @@ export const Card = ( {cardInfo, indexNum} ) => {
               </a>
             </label> */}
             <label>
-              <a className='card-link' href={ cardInfo.liveLink } target="_blank">
+              <a className='card-link' href={ cardInfo.liveLink } target='_blank' rel='noopener noreferrer'>
                 <IconTap />
               </a>
             </label>
             <label>
-              <a className='card-link' href={ cardInfo.githubLink } target="_blank">
+              <a className='card-link' href={ cardInfo.githubLink } target='_blank' rel='noopener noreferrer'>
                 <IconGithub />
               </a>
             </label>
