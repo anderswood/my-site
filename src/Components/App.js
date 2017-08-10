@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div id="app-container">
-        <Route exact path='/' render={ () => <LandingPage />}/>
+        <Route exact path='/' render={ (history) => <LandingPage history={ history } />}/>
         <Route exact path='/' render={ () => <CardGrid />}/>
           <Route path='/AboutMe' render={ () => <Header headerStatus='fixed' />} />
           <Route path='/AboutMe' render={ (location) => <AboutMe />}/>
