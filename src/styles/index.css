@@ -120,8 +120,7 @@ body, html {
   box-shadow: 0 0 8px rgba(189, 102, 21, 0.8); }
 
 .label-hamburger:hover svg {
-  fill: #bd6615;
-  box-shadow: 0 0 20px rgba(189, 102, 21, 0.8); }
+  fill: #bd6615; }
 
 .link-aboutMe {
   display: flex;
@@ -143,9 +142,9 @@ body, html {
   text-shadow: 0 0 4px #bd6615; }
 
 @media screen and (max-width: 600px) {
-  .label-mobile {
+  .header-container-fixed .label-mobile {
     display: unset; }
-  .label-desktop {
+  .header-container-fixed .label-desktop {
     display: none; } }
 
 .card {
