@@ -59,7 +59,7 @@ body, html {
 
 .header-container-fixed {
   position: fixed;
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
   bottom: unset;
   top: 0; }
   .header-container-fixed .header-left-div {
@@ -71,12 +71,7 @@ body, html {
   .header-container-fixed .link-aboutMe {
     background: #FFF; }
 
-.header-right-div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.header-left-div {
+.header-right-div, .header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -88,20 +83,25 @@ body, html {
   margin: 0; }
 
 .header-title {
-  margin-left: 3px;
+  margin-left: 5px;
+  font-weight: 200;
+  font-size: 18px;
   color: #FFF; }
 
 .header-label {
-  margin: 10px;
+  margin: 15px 7px;
   font-size: 0;
   color: #FFF; }
 
 .header-link svg, .header-link {
   font-size: 0; }
 
-.header-link svg, .link-aboutMe {
-  width: 45px;
-  height: 45px; }
+.header-link svg, .link-aboutMe, .label-hamburger svg {
+  width: 40px;
+  height: 40px; }
+
+.label-mobile {
+  display: none; }
 
 .label-github:hover svg {
   fill: #4078c0;
@@ -118,6 +118,10 @@ body, html {
 .link-aboutMe:hover {
   background: #bd6615;
   box-shadow: 0 0 8px rgba(189, 102, 21, 0.8); }
+
+.label-hamburger:hover svg {
+  fill: #bd6615;
+  box-shadow: 0 0 20px rgba(189, 102, 21, 0.8); }
 
 .link-aboutMe {
   display: flex;
@@ -136,13 +140,19 @@ body, html {
 
 .header-left-div:hover .header-name, .header-left-div:hover .header-title {
   color: #bd6615;
-  text-shadow: 0 0 8px #bd6615; }
+  text-shadow: 0 0 4px #bd6615; }
+
+@media screen and (max-width: 600px) {
+  .label-mobile {
+    display: unset; }
+  .label-desktop {
+    display: none; } }
 
 .card {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  flex: 0 1 100%;
+  flex: 0 1 33.33%;
   height: auto; }
 
 .card:before {
@@ -213,7 +223,31 @@ body, html {
   width: 75px;
   height: 75px; }
 
-@media screen and (min-width: 550px) {
+.card0 {
+  order: 0; }
+
+.card1 {
+  order: 1; }
+
+.card2 {
+  order: 2; }
+
+.card3 {
+  order: 5; }
+
+.card4 {
+  order: 4; }
+
+.card5 {
+  order: 3; }
+
+.card6 {
+  order: 6; }
+
+.card7 {
+  order: 7; }
+
+@media screen and (max-width: 1200px) {
   .card {
     flex: 0 1 50%; }
   .card0 {
@@ -233,9 +267,9 @@ body, html {
   .card7 {
     order: 6; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 750px) {
   .card {
-    flex: 0 1 33.33%; }
+    flex: 0 1 100%; }
   .card0 {
     order: 0; }
   .card1 {
@@ -243,11 +277,11 @@ body, html {
   .card2 {
     order: 2; }
   .card3 {
-    order: 5; }
+    order: 3; }
   .card4 {
     order: 4; }
   .card5 {
-    order: 3; }
+    order: 5; }
   .card6 {
     order: 6; }
   .card7 {
