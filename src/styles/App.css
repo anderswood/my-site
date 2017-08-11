@@ -42,3 +42,10 @@ body, html {
 #card-grid-container {
   display: flex;
   flex-flow: row wrap; }
+
+.hero-container, #card-grid-container {
+  max-width: 2500px;
+  margin: 0 auto; }
+
+#app-container {
+  background: #bd6615; }

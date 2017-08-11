@@ -123,6 +123,21 @@
 }
 
 
+@media screen and (max-width: 900px) {
+  .titles-container {
+    margin-left: 5%;
+  }
+
+  #title {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
 
   .header-container-fixed .label-mobile {
@@ -137,5 +152,23 @@
   //   background: blue;
   //   // display: unset;
   // }
+
+}
+
+@media screen and (max-width: 550px) {
+  .titles-container {
+    margin-left: 4%;
+    margin-top: 0%;
+    text-align: left;
+  }
+
+  #title {
+    font-size: 30px;
+    margin-top: 10px
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
 
 }
