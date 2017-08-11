@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  flex: 0 1 100%;
+  flex: 0 1 33.33%;
   height: auto;
 }
 
@@ -61,8 +61,17 @@
   height: 75px;
 }
 
+.card0 { order: 0 };
+.card1 { order: 1 };
+.card2 { order: 2 };
+.card3 { order: 5 };
+.card4 { order: 4 };
+.card5 { order: 3 };
+.card6 { order: 6 };
+.card7 { order: 7 };
 
-@media screen and (min-width: 550px) {
+
+@media screen and (max-width: 1200px) {
   .card {
     flex: 0 1 50%;
   }
@@ -78,17 +87,17 @@
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 750px) {
   .card {
-    flex: 0 1 33.33%;
+    flex: 0 1 100%;
   }
 
   .card0 { order: 0 };
   .card1 { order: 1 };
   .card2 { order: 2 };
-  .card3 { order: 5 };
+  .card3 { order: 3 };
   .card4 { order: 4 };
-  .card5 { order: 3 };
+  .card5 { order: 5 };
   .card6 { order: 6 };
   .card7 { order: 7 };
 

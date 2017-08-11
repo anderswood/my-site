@@ -18,8 +18,7 @@
 
 .header-container-fixed {
   position: fixed;
-  // box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
   bottom: unset;
   top: 0;
   .header-left-div {
@@ -36,13 +35,7 @@
   }
 }
 
-.header-right-div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header-left-div {
+.header-right-div, .header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,12 +49,14 @@
 }
 
 .header-title {
-  margin-left: 3px;
+  margin-left: 5px;
+  font-weight: 200;
+  font-size: 18px;
   color: #FFF;
 }
 
 .header-label {
-  margin: 10px;
+  margin: 15px 7px;
   font-size: 0;
   color: #FFF;
 }
@@ -70,9 +65,13 @@
   font-size: 0;
 }
 
-.header-link svg, .link-aboutMe {
-  width: 45px;
-  height: 45px;
+.header-link svg, .link-aboutMe, .label-hamburger svg {
+  width: 40px;
+  height: 40px;
+}
+
+.label-mobile {
+  display: none;
 }
 
 .label-github:hover svg {
@@ -93,7 +92,11 @@
 .link-aboutMe:hover {
   background: $primary-orange;
   box-shadow: 0 0 8px rgba(189, 102, 21, 0.8);
+}
 
+.label-hamburger:hover svg {
+  fill: $primary-orange;
+  box-shadow: 0 0 20px rgba(189, 102, 21, 0.8);
 }
 
 .link-aboutMe {
@@ -107,7 +110,6 @@
 .text-me {
   font-size: 25px;
   margin: 0;
-  // letter-spacing: -3px;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -117,5 +119,18 @@
 
 .header-left-div:hover .header-name, .header-left-div:hover .header-title {
   color: $primary-orange;
-  text-shadow: 0 0 8px $primary-orange;
+  text-shadow: 0 0 4px $primary-orange;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .label-mobile {
+    display: unset;
+  }
+
+  .label-desktop {
+    display: none;
+  }
+
 }
