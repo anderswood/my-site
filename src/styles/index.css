@@ -78,7 +78,7 @@ body, html {
   .header-container-fixed .link-aboutMe {
     background: #FFF; }
 
-.header-right-div, .header-left-div {
+.header-right-div, .header-right-subdiv, .header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -126,7 +126,7 @@ body, html {
   background: #bd6615;
   box-shadow: 0 0 8px rgba(189, 102, 21, 0.8); }
 
-.label-hamburger:hover svg {
+.label-mobile:hover svg {
   fill: #bd6615; }
 
 .link-aboutMe {
@@ -159,8 +159,19 @@ body, html {
 @media screen and (max-width: 600px) {
   .header-container-fixed .label-mobile {
     display: unset; }
-  .header-container-fixed .label-desktop {
-    display: none; } }
+  .header-container-fixed .header-right-subdiv {
+    display: none; }
+  .header-container-fixed .header-right-div:hover .header-right-subdiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 9px;
+    top: 71px;
+    background: rgba(0, 0, 0, 0.8); }
+  .header-container-fixed .header-right-div:hover .label-desktop {
+    margin: 7px 13px; }
+  .header-container-fixed .header-right-div:hover .label-aboutMe {
+    margin-bottom: 13px; } }
 
 @media screen and (max-width: 550px) {
   .titles-container {

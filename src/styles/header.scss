@@ -35,7 +35,7 @@
   }
 }
 
-.header-right-div, .header-left-div {
+.header-right-div, .header-right-subdiv, .header-left-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +94,7 @@
   box-shadow: 0 0 8px rgba(189, 102, 21, 0.8);
 }
 
-.label-hamburger:hover svg {
+.label-mobile:hover svg {
   fill: $primary-orange;
   // box-shadow: 0 0 20px rgba(189, 102, 21, 0.8);
 }
@@ -144,14 +144,26 @@
     display: unset;
   }
 
-  .header-container-fixed .label-desktop {
+  .header-container-fixed .header-right-subdiv {
     display: none;
   }
 
-  // .label-mobile:hover + .label-desktop {
-  //   background: blue;
-  //   // display: unset;
-  // }
+  .header-container-fixed .header-right-div:hover {
+    .header-right-subdiv {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 9px;
+      top: 71px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .label-desktop {
+      margin: 7px 13px;
+    }
+    .label-aboutMe {
+      margin-bottom: 13px;
+    }
+  }
 
 }
 
