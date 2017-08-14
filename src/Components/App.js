@@ -10,11 +10,6 @@ import AboutMe from './AboutMe';
 
 class App extends Component {
 
-  // componentWillReceiveProps(nextProps) {
-  //   console.log(this.props);
-  //   console.log(nextProps);
-  // }
-
   render() {
     return (
       <div id="app-container">

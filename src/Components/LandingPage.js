@@ -6,7 +6,6 @@ import { Header } from './Header';
 class LandingPage extends Component {
 
   componentDidMount () {
-    console.log(this.props.history);
     const heroElem = document.querySelector('.hero-container');
     const headerElem = document.querySelector('.header-container');
     const heightOfHeader = headerElem.offsetHeight;
