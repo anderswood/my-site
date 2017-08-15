@@ -12,7 +12,7 @@ const stashTrackerContent = {
   cardType: 'content-card',
   class: 'stash-tracker-content',
   title: 'Stash Tracker',
-  text: 'This app allows the user to record backcountry skiing routes using polygons and polylines with the Google Maps API. The user can toggle between different saved stashes to display them on the map. I designed and built the app for a non-profit group that needed help collecting backcountryroute information in a private way. I spent two weeks building the app as a personal project.'
+  text: 'This app allows the user to record backcountry skiing routes using polygons and polylines with the Google Maps API. The user can toggle between different saved stashes to display them on the map. I designed and built the app for a non-profit group that needed help collecting backcountry route information in a private way. I spent two weeks building the app as a personal project.'
 }
 
 const weatherlyImg = {
