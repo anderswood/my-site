@@ -23,11 +23,11 @@
   top: 0;
   .header-left-div {
     visibility: visible;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .header-label svg {
     fill: #FFF;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .text-me {
     color: #000;
@@ -77,8 +77,8 @@
 }
 
 .header-label:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
 }
 
 .label-github:hover svg {
@@ -103,7 +103,6 @@
 
 .label-mobile:hover svg {
   fill: $primary-orange;
-  // box-shadow: 0 0 20px rgba(189, 102, 21, 0.8);
 }
 
 .link-aboutMe {

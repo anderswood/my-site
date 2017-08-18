@@ -71,10 +71,10 @@ body, html {
   top: 0; }
   .header-container-fixed .header-left-div {
     visibility: visible;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.1s ease-in-out; }
   .header-container-fixed .header-label svg {
     fill: #FFF;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.1s ease-in-out; }
   .header-container-fixed .text-me {
     color: #000; }
   .header-container-fixed .link-aboutMe {
@@ -113,8 +113,8 @@ body, html {
   display: none; }
 
 .header-label:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out; }
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out; }
 
 .label-github:hover svg {
   fill: #4078c0;
@@ -259,6 +259,10 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.card-hover label:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out; }
 
 .card-icon-container {
   display: flex;
