@@ -23,9 +23,11 @@
   top: 0;
   .header-left-div {
     visibility: visible;
+    transition: all 0.2s ease-in-out;
   }
   .header-label svg {
     fill: #FFF;
+    transition: all 0.2s ease-in-out;
   }
   .text-me {
     color: #000;
@@ -72,6 +74,11 @@
 
 .label-mobile {
   display: none;
+}
+
+.header-label:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .label-github:hover svg {
@@ -122,6 +129,10 @@
   text-shadow: 0 0 4px $primary-orange;
 }
 
+.header-left-div:hover .header-name {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
 
 @media screen and (max-width: 900px) {
   .titles-container {

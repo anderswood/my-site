@@ -70,9 +70,11 @@ body, html {
   bottom: unset;
   top: 0; }
   .header-container-fixed .header-left-div {
-    visibility: visible; }
+    visibility: visible;
+    transition: all 0.2s ease-in-out; }
   .header-container-fixed .header-label svg {
-    fill: #FFF; }
+    fill: #FFF;
+    transition: all 0.2s ease-in-out; }
   .header-container-fixed .text-me {
     color: #000; }
   .header-container-fixed .link-aboutMe {
@@ -109,6 +111,10 @@ body, html {
 
 .label-mobile {
   display: none; }
+
+.header-label:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out; }
 
 .label-github:hover svg {
   fill: #4078c0;
@@ -147,6 +153,10 @@ body, html {
 .header-left-div:hover .header-name, .header-left-div:hover .header-title {
   color: #bd6615;
   text-shadow: 0 0 4px #bd6615; }
+
+.header-left-div:hover .header-name {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out; }
 
 @media screen and (max-width: 900px) {
   .titles-container {
