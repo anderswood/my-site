@@ -32,7 +32,7 @@ body, html {
   margin-top: 0; }
 
 .hero-container {
-  background: url("../images/sopris-summit-small.jpg") no-repeat fixed;
+  background: url("../images/sopris-bw-blurred.JPG") no-repeat fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -324,7 +324,7 @@ body, html {
     order: 7; } }
 
 .aboutMe-container {
-  background: url("../images/trees1.jpg");
+  background: url("../images/trees-bw2.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
