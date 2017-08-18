@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { Header } from './Header';
-// import { CardGrid } from './CardGrid';
 
 class LandingPage extends Component {
 
