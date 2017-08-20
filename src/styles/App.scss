@@ -32,8 +32,6 @@ body, html {
  margin: 0;
 }
 
-
-
 .titles-container {
   margin-left: 11%;
   margin-top: 5%;
@@ -48,9 +46,9 @@ body, html {
 .hero-container {
   background: url('../images/sopris-bw-blurred.JPG') no-repeat fixed;
   background-size: cover;
+  background-position: top;
   margin: 0;
   padding: 0;
-  background-position: top;
   position: relative;
 }
 
