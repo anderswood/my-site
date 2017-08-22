@@ -4,8 +4,11 @@ import IconGithub from './Icons/Github';
 // import IconImage from './Icons/Image';
 import '../styles/card.css';
 
-export const Card = ( {cardInfo, indexNum} ) => {
+import { ImagePopUp } from './ImagePopUp';
+import Modal from 'react-modal';
 
+
+export const Card = ( {cardInfo, indexNum} ) => {
 
   if(cardInfo.cardType === 'img-card') {
     return (
@@ -29,6 +32,10 @@ export const Card = ( {cardInfo, indexNum} ) => {
             </label>
           </div>
         </div>
+        <Modal isOpen={ true } contentLabel='Modal' >
+          <ImagePopUp />
+        </Modal>
+
       </div>
     )
   } else
