@@ -32,7 +32,7 @@ export const Card = ( {cardInfo, indexNum} ) => {
             </label>
           </div>
         </div>
-        <Modal isOpen={ true } contentLabel='Modal' >
+        <Modal isOpen={ false } contentLabel='Modal' >
           <ImagePopUp />
         </Modal>
 
