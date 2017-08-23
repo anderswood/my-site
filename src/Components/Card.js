@@ -4,8 +4,8 @@ import IconGithub from './Icons/Github';
 // import IconImage from './Icons/Image';
 import '../styles/card.css';
 
-import { ImagePopUp } from './ImagePopUp';
-import Modal from 'react-modal';
+// import { ImagePopUp } from './ImagePopUp';
+// import Modal from 'react-modal';
 
 
 export const Card = ( {cardInfo, indexNum} ) => {
@@ -32,9 +32,9 @@ export const Card = ( {cardInfo, indexNum} ) => {
             </label>
           </div>
         </div>
-        <Modal isOpen={ false } contentLabel='Modal' >
+        {/* <Modal isOpen={ false } contentLabel='Modal' >
           <ImagePopUp />
-        </Modal>
+        </Modal> */}
 
       </div>
     )
