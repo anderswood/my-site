@@ -1,25 +1,21 @@
 import React from 'react';
 import IconTap from './Icons/TapRound';
 import IconGithub from './Icons/Github';
-// import IconImage from './Icons/Image';
+import IconImage from './Icons/Image';
 import '../styles/card.css';
 
-// import { ImagePopUp } from './ImagePopUp';
-// import Modal from 'react-modal';
-
-
-export const Card = ( {cardInfo, indexNum} ) => {
+export const Card = ( {cardInfo, indexNum, handleImageClick} ) => {
 
   if(cardInfo.cardType === 'img-card') {
     return (
       <div className={`card card${indexNum} ${cardInfo.cardType}`}>
         <div className={`card${indexNum}-hover card-hover`}>
           <div className='card-icon-container'>
-            {/* <label>
+            <label onClick={() => handleImageClick(cardInfo.class)}>
               <a className='card-link'>
                 <IconImage />
               </a>
-            </label> */}
+            </label>
             <label>
               <a className='card-link' href={ cardInfo.liveLink } target='_blank' rel='noopener noreferrer'>
                 <IconTap />
@@ -32,10 +28,6 @@ export const Card = ( {cardInfo, indexNum} ) => {
             </label>
           </div>
         </div>
-        {/* <Modal isOpen={ false } contentLabel='Modal' >
-          <ImagePopUp />
-        </Modal> */}
-
       </div>
     )
   } else
