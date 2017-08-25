@@ -24,6 +24,7 @@ class App extends Component {
   }
 
   render() {
+    // console.log(this.state.isOpenStatus);
     return (
       <div id="app-container">
         <Favicon url={['https://maxcdn.icons8.com/windows10/PNG/512/Holidays/snowflake-512.png']}/>
@@ -31,7 +32,7 @@ class App extends Component {
         <Route exact path='/' render={ () => <CardGrid handleImageClick={ this.handleImageClick.bind(this) } />}/>
         <Route path='/AboutMe' render={ () => <Header headerStatus='fixed' />} />
         <Route path='/AboutMe' render={ location => <AboutMe />}/>
-        <Modal isOpen={ this.isOpenStatus } contentLabel='Modal' >
+        <Modal isOpen={ this.state.isOpenStatus } contentLabel='Modal' >
           <ImagePopUp />
         </Modal>
       </div>
